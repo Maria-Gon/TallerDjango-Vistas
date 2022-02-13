@@ -8,7 +8,7 @@ GetById
 ![GetById](https://user-images.githubusercontent.com/69689894/153776252-3dbd0c1c-3b33-4b58-8d19-31c8905cf3c3.png)
 
 Update
-![Update](https://user-images.githubusercontent.com/69689894/153776260-4ebd6167-0ec1-4305-8a22-51395b2a3fda.png)
+![Update](https://user-images.githubusercontent.com/69689894/153778743-9914e0c5-24a4-442e-ab64-c8075bb6ccce.png)
 
 Create
 ![CreateMalo](https://user-images.githubusercontent.com/69689894/153776301-b9e96bbc-e9fb-4c86-b935-f1e714b2cf37.png)
