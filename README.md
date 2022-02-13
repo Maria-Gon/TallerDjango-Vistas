@@ -11,4 +11,5 @@ Update
 ![Update](https://user-images.githubusercontent.com/69689894/153778743-9914e0c5-24a4-442e-ab64-c8075bb6ccce.png)
 
 Create
-![CreateMalo](https://user-images.githubusercontent.com/69689894/153776301-b9e96bbc-e9fb-4c86-b935-f1e714b2cf37.png)
+![Create](https://user-images.githubusercontent.com/69689894/153780037-27c4f513-1c0d-40f2-88e0-de09e49e05b8.png)
+
