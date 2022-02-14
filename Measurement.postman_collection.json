@@ -25,7 +25,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"variable\": 2,\n    \"value\": 23.0,\n    \"unit\": \"Celsius\",\n    \"place\": \"Bogota\",\n    \"date\": \"2022-02-13T19:19:29.730Z\"\n}",
+					"raw": "{\n    \"variable\": 1,\n    \"value\": 23.0,\n    \"unit\": \"Celsius\",\n    \"place\": \"Bogota\",\n    \"date\": \"2022-02-13T19:19:29.730Z\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -44,7 +44,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Create Measurement",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"variable\": 1,\n    \"value\": 23.0,\n    \"unit\": \"Celsius\",\n    \"place\": \"Bogota\",\n    \"date\": \"2022-02-13T19:19:29.730Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}{{api_path}}/measurements/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{api_path}}",
+							"path": [
+								"measurements",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 00:48:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 22,\n        \"fields\": {\n            \"variable\": 1,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:48:44.485Z\"\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Delete Measurement",
@@ -76,7 +139,61 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Delete Measurement",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}{{api_path}}/measurements/17",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{api_path}}",
+							"path": [
+								"measurements",
+								"17"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 00:26:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": null,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-13T23:20:50.088Z\"\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Retrieve Measurements",
@@ -106,7 +223,60 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Retrieve Measurements",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}{{api_path}}/measurements",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{api_path}}",
+							"path": [
+								"measurements"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 00:49:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1173"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 4,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": -1,\n            \"unit\": \"O\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-13T19:19:29.730Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 18,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:23:49.166Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 19,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:24:25.649Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 1,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 34,\n            \"unit\": \"Celsius\",\n            \"place\": \"Medellin\",\n            \"dateTime\": \"2022-02-13T16:19:29Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 20,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:28:16.900Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 21,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:28:28.827Z\"\n        }\n    },\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 22,\n        \"fields\": {\n            \"variable\": 1,\n            \"value\": 23,\n            \"unit\": \"Celsius\",\n            \"place\": \"Bogota\",\n            \"dateTime\": \"2022-02-14T00:48:44.485Z\"\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Retrive Measurement",
@@ -142,7 +312,66 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Retrive Measurement",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}{{api_path}}/measurements?id=1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{api_path}}",
+							"path": [
+								"measurements"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 00:25:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 1,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 34,\n            \"unit\": \"Celsius\",\n            \"place\": \"Medellin\",\n            \"dateTime\": \"2022-02-13T16:19:29Z\"\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Update Measurement",
@@ -183,7 +412,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Update Measurement",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"variable\": 2,\n    \"value\":34.0,\n    \"unit\": \"Celsius\",\n    \"place\": \"Medellin\",\n    \"dateTime\": \"2022-02-13T16:19:29\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}{{api_path}}/measurements/1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{api_path}}",
+							"path": [
+								"measurements",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Feb 2022 00:25:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "165"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"model\": \"measurements.measurement\",\n        \"pk\": 1,\n        \"fields\": {\n            \"variable\": 2,\n            \"value\": 34,\n            \"unit\": \"Celsius\",\n            \"place\": \"Medellin\",\n            \"dateTime\": \"2022-02-13T16:19:29\"\n        }\n    }\n]"
+				}
+			]
 		}
 	],
 	"event": [
