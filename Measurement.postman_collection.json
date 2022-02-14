@@ -7,6 +7,19 @@
 	"item": [
 		{
 			"name": "Create Measurement",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setGlobalVariable(\"new_id_measurement\", data.id);",
+							"tests[\"No genera ningun error crear un measurement\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -35,18 +48,31 @@
 		},
 		{
 			"name": "Delete Measurement",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setGlobalVariable(\"new_id_measurement\", data.id);",
+							"tests[\"No genera ningun error crear un measurement\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/measurements/3",
+					"raw": "{{host}}:{{port}}{{api_path}}/measurements/17",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
 						"measurements",
-						"3"
+						"17"
 					]
 				}
 			},
@@ -54,6 +80,18 @@
 		},
 		{
 			"name": "Retrieve Measurements",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"No genera ningun error obtener measurements\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -72,6 +110,18 @@
 		},
 		{
 			"name": "Retrive Measurement",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"No genera ningun error obtener un measurement\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -96,6 +146,19 @@
 		},
 		{
 			"name": "Update Measurement",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setGlobalVariable(\"new_id_measurement\", data.id);",
+							"tests[\"No genera ningun error actualizar un measurement\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [],
